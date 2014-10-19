@@ -10,23 +10,37 @@ html, body { height: 100%; }
 
 
 @background: #fdfdfd;
+@font-family-serif: 'Lora', georgia, times, serif;
+@font-family-sans:  'Istok Web' Helvetica, Arial, sans-serif;
 
 body {
-  font-family: 'Lora', georgia, times, serif;
+  font-family: @font-family-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.875;
   font-weight: 400;
   background-color: @background;
 }
 
+
+// Typography
+
+
+
 h1, h2, h3, h4, h5, h6 { 
   font-size: 100%; 
   font-weight: 400; 
-  font-family: 'Istok Web' Helvetica, Arial, sans-serif;
+  font-family: @font-family-sans;
+  line-height: 1.4;
 }
 
 h1, h2 {
   font-weight: 700;
+}
+
+.intro {
+  font-family: @font-family-sans;
+  font-size:24px;
+  line-height: 1.5;
 }
 
 strong {
@@ -189,7 +203,9 @@ a:visited { color: #205caa; }
 }
 
 .post-header .meta {
-  font-size: 15px;
+  font-size: 14px;
+  font-family: @font-family-sans;
+  text-transform: uppercase;
   color: #818181;
   margin-top: 5px;
 }
@@ -227,9 +243,9 @@ a:visited { color: #205caa; }
 .post-content blockquote {
   border-left: 4px solid #e8e8e8;
   padding-left: 20px;
-  font-size: 18px;
+  font-size: 30px;
+  line-height: 1.4;
   opacity: .6;
-  letter-spacing: -1px;
   font-style: italic;
   margin: 30px 0;
 }
