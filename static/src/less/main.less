@@ -8,15 +8,30 @@
 
 html, body { height: 100%; }
 
+
+@background: #fdfdfd;
+
 body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Lora', georgia, times, serif;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 300;
-  background-color: #fdfdfd;
+  font-weight: 400;
+  background-color: @background;
 }
 
-h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { 
+  font-size: 100%; 
+  font-weight: 400; 
+  font-family: 'Istok Web' Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+strong {
+  font-weight:700;
+}
 
 a         { color: #2a7ae2; text-decoration: none; }
 a:hover   { color: #000; text-decoration: underline; }
@@ -170,9 +185,7 @@ a:visited { color: #205caa; }
 
 .post-header h1 {
   font-size: 42px;
-  letter-spacing: -1.75px;
   line-height: 1;
-  font-weight: 300;
 }
 
 .post-header .meta {
@@ -193,7 +206,6 @@ a:visited { color: #205caa; }
 .post-content h5,
 .post-content h6 {
   line-height: 1;
-  font-weight: 300;
   margin: 40px 0 20px;
 }
 
