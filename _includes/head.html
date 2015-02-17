@@ -2,12 +2,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Custom FONTS -->
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700|Istok+Web:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ "/static/dist/css/main.css" | prepend: site.baseurl }}">

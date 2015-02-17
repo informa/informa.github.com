@@ -3,9 +3,20 @@
 
 
 
+body {
+	background-color: @background-color;
+	color:@base-color;
+}
 
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-a         { color: #2a7ae2; text-decoration: none; }
+
+a         { color: @link-color; text-decoration: none; }
 a:hover   { color: #000; text-decoration: underline; }
-a:visited { color: #205caa; }
+a:visited { color: darken(@link-color, 5%); }

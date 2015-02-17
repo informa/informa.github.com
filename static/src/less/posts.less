@@ -3,20 +3,31 @@
 
 
 
+.post {
+    background:lighten(@background-color, 3%);
+    border:1px solid darken(@background-color, 6%);
+    padding: 45px 50px;
+    margin-left: 280px;
+    .border-radius(1px);
+    .drop-shadow(7px, 10px, 0, 0, 0.04);
+}
 
-
-.post-header { margin: 10px 0 30px; }
+.post-header { 
+  margin: 10px 0 35px; 
+  border-bottom:3px solid lighten(@link-color, 30%)
+}
 
 .post-header h1 {
   font-size: 42px;
   line-height: 1;
+  margin-bottom:5px;
 }
 
 .post-header .meta {
   font-size: 14px;
   font-family: @font-family-sans;
   text-transform: uppercase;
-  color: #818181;
+  color: lighten(@base-color, 30%);
   margin-top: 5px;
 }
 
@@ -50,6 +61,12 @@
   letter-spacing: -1px;
 }
 
+.post-content h5 {
+  font-family: @font-family-sans;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .post-content blockquote {
   border-left: 4px solid #e8e8e8;
   padding-left: 20px;
@@ -58,6 +75,7 @@
   opacity: .6;
   font-style: italic;
   margin: 30px 0;
+  font-family:@font-family-serif;
 }
 
 .post-content ul,

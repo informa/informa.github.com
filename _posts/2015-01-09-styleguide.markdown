@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "An interesting blog article title"
+title:  "Styleguide template"
 date:   2014-10-19 17:29:27
-categories: testing
 ---
 
 <p class="intro">A snappy introduction that sets out the main argument for the piece. I'll cover the main ideas right here and hint at my conclusion without giving the game away completely.</p>
