@@ -3,34 +3,73 @@ module.exports = function( grunt ) {
     require( 'time-grunt' )( grunt );
     require( 'load-grunt-tasks' )( grunt );
     
-    var lessFiles = {
-        'static/dist/css/main.css': 'static/src/less/main.less'
+    var sassFiles = {
+        'static/dist/css/site.css': 'static/src/scss/site.scss'
+    };
+
+    var jsFiles = [
+        'static/src/js/site.js',
+        'static/src/js/helpers/*.js',
+    ];
+
+    var uglifyDependencies = {
+        'static/dist/js/vendor.js': ['static/src/js/vendor.js']
+    };
+
+    var uglifyJs = {
+      'static/dist/js/site.js': jsFiles
     };
 
     grunt.initConfig({
-        csslint : {
-            test : {
-                options : {
-                    import : 2
-                },
-                src : [ 'css/main.css' ]
+        pkg: grunt.file.readJSON('package.json'),
+
+        jshint: {
+            all: [
+                'Gruntfile.js',
+                'static/src/js/**/*.js',
+                '!static/src/js/vendor.js'
+            ]
+        },
+
+        bower: {
+            install: {
+                options: {
+                    copy: false,
+                    install: true
+                }
             }
         },
 
-        less: {
+        uglify: {
+            options: {
+
+            },
             dev: {
-                files: lessFiles,
                 options: {
-                    'sourceMap': true
-                }
+                    sourceMap: true
+                },
+                files: uglifyJs
             },
             dist: {
-                files: lessFiles,
                 options: {
-                    cleancss: true,
-                    optimization: 0,
                     report: 'gzip'
-                }
+                },
+                files: uglifyDependencies
+            }
+        },
+
+        sass: {
+            dist: {
+                options: {
+                    // compression of css
+                    style: 'expanded',
+                    // sudo install gem susy and breakpoint first
+                    // require: ['susy', 'breakpoint'],
+                    loadPath: [
+                      'bower_components/bourbon/app/assets/stylesheets'
+                    ]
+                },
+                files: sassFiles
             }
         },
 
@@ -43,14 +82,15 @@ module.exports = function( grunt ) {
             }
         },
 
-        watch : {
+        watch: {
             files : [ '_layouts/*.html',
                       '_posts/*.markdown',
-                      'static/src/less/*.less',
+                      'static/src/scss/**/*.scss',
+                      'static/src/js/**/*.js',
                       '_config.yml',
                       'index.html',
                       '404.html' ],
-            tasks : [ 'less',
+            tasks : [ 'sass',
                       'shell:jekyllServe' ],
             options : {
                 spawn : false,
@@ -58,10 +98,40 @@ module.exports = function( grunt ) {
                 atBegin : true,
                 livereload : true
             }
-        }
+        },
+
+        bower_concat: {
+            dist: {
+                // Only created in the SRC directory to be uglified.
+                dest: 'static/src/js/vendor.js',
+                exclude: [
+                    'bourbon', 'susy', 'breakpoint'
+                ],
+                dependencies: {
+
+                }
+            },
+        },
+
+        
     });
 
-    // register custom grunt tasks
-    grunt.registerTask( 'test', [ 'csslint' ] );
-    grunt.registerTask( 'deploy', [ 'less', 'shell:jekyllBuild' ] )
+    // Load plugins here.
+    grunt.loadNpmTasks("grunt-contrib-jshint");
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-bower-task');
+    grunt.loadNpmTasks('grunt-bower-concat');
+
+    // Default tasks used during development
+    grunt.registerTask('default', [
+        'jshint',
+        'bower:install',
+        'bower_concat',
+        'uglify',
+        'sass'
+    ]);
+
+    grunt.registerTask( 'deploy', [ 'sass', 'shell:jekyllBuild' ] );
 };

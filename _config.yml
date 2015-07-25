@@ -1,8 +1,9 @@
 # Site settings
 title: Jonathan Price
+role: Frontend Developer
 email: jon.price77@gmail.com
-description: "TBA: What I enjoy doing front end wise"
-colophon: "This site is created by Jonathan Price using Jekyll and Github pages."
+description: "I am a frontend developer that enjoys playing with new technology and builds flexible web applications for businesses."
+colophon: "This site is created by Jonathan Price using Jekyll and Github pages togeather with Sass, Bourbon, Bitters and Susy"
 baseurl: ""
 url: "http://informa.github.io/"
 

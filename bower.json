@@ -1,0 +1,30 @@
+{
+  "name": "jons-website",
+  "version": "0.0.0",
+  "authors": [
+    "Jonathan Price <jon.price77@gmail.com>"
+  ],
+  "description": "Jonathan Price's website",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "bourbon"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "bourbon": "~4.2.1",
+    "susy": "~2.2.5",
+    "breakpoint": "~4.6.4"
+  }
+}

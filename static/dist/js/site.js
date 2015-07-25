@@ -1,0 +1,2 @@
+var site=function(a){"use strict";return site={initList:[],init:function(){a.each(site.initList,function(a,b){b()})},registerInitFunction:function(a){site.initList.push(a)}},a(site.init),site}(jQuery);
+//# sourceMappingURL=site.js.map
