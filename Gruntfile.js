@@ -63,7 +63,7 @@ module.exports = function( grunt ) {
                 options: {
                     // compression of css
                     style: 'expanded',
-                    // sudo install gem susy and breakpoint first
+                    // TODO: if necessary
                     // require: ['susy', 'breakpoint'],
                     loadPath: [
                       'bower_components/bourbon/app/assets/stylesheets'
