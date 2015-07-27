@@ -62,7 +62,7 @@ module.exports = function( grunt ) {
             dist: {
                 options: {
                     // compression of css
-                    style: 'expanded',
+                    style: 'compressed',
                     // TODO: if necessary
                     // require: ['susy', 'breakpoint'],
                     loadPath: [
