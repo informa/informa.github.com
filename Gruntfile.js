@@ -64,7 +64,7 @@ module.exports = function( grunt ) {
                     // compression of css
                     style: 'compressed',
                     // TODO: if necessary
-                    // require: ['susy', 'breakpoint'],
+                    require: ['susy', 'breakpoint'],
                     loadPath: [
                       'bower_components/bourbon/app/assets/stylesheets'
                     ]
