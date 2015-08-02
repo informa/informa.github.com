@@ -1,0 +1,29 @@
+.about-career h1,
+.career-milestone h2 {
+	@include fontxl;
+	@include fontserif;
+}
+
+.career-milestone {
+	h3 {
+		@include fontlg;
+		margin-bottom:0.4em;
+	}
+	h4 {
+		@include fontsm;
+		margin-bottom:2em;
+		font-weight: 400;
+	}
+}
+
+.about-general,
+.career-milestone,
+.about-site {
+	margin-bottom: 3em;
+}
+
+.about-general {
+	p {
+		margin-bottom:1.1em;
+	}
+}
