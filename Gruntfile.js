@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
 
     var jsFiles = [
         'static/src/js/site.js',
-        'static/src/js/helpers/*.js',
+        'static/src/js/helper/*.js',
     ];
 
     var uglifyDependencies = {
@@ -64,7 +64,7 @@ module.exports = function( grunt ) {
                     // compression of css
                     style: 'compressed',
                     // TODO: if necessary
-                    require: ['susy', 'breakpoint'],
+                    require: ['breakpoint'],
                     loadPath: [
                       'bower_components/bourbon/app/assets/stylesheets'
                     ]
@@ -105,7 +105,7 @@ module.exports = function( grunt ) {
                 // Only created in the SRC directory to be uglified.
                 dest: 'static/src/js/vendor.js',
                 exclude: [
-                    'bourbon', 'susy', 'breakpoint'
+                    'bourbon', 'breakpoint'
                 ],
                 dependencies: {
 

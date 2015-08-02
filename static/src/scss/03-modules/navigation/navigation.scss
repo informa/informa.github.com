@@ -1,0 +1,15 @@
+// Navigation
+
+
+.nav-main {
+  text-align: justify;
+  li {
+    display: inline;
+    &.nav-justify {
+      display: inline-block;
+      width: 100%;
+      *display: inline;
+      zoom: 1
+    }
+  }
+}

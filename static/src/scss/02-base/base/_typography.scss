@@ -17,10 +17,15 @@ h6 {
   font-size: $base-font-size;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
+  font-weight: $font-weight-heavy;
 }
 
 p {
   margin: 0 0 $small-spacing;
+}
+
+strong,b {
+  font-weight: $font-weight-heavy;
 }
 
 a {

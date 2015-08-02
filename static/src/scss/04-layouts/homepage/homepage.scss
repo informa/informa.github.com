@@ -1,217 +1,31 @@
-/**
- * Homepage
- **/
+// Homepage layout
 
 
- // The 960gs in px
-$total-columns: 12;
-$column-width: 60px;
-$gutter-width: 20px/$column-width;
-
-$container-math: fluid;
-$container-width: 60em; // Static layouts, leave container: auto -- otherwise eg: 60em;
-
-$susy: (
-    // Static layouts, leave container: auto
-    math: $container-math,
-    output: float,
-    // Gutter to the right
-    gutter-position: after,
-    container: $container-width,
-    container-position: center,
-    columns: $total-columns,
-    gutters: $gutter-width,
-    column-width: $column-width,
-    global-box-sizing: content-box,
-);
-
-// No gutter grid
-$nogutters: (
-    gutters: 0,
-);
-
-// Fallback to a static width for < ie9
-$fallback: (
-    math: static,
-    container: auto,
-);
-
-// Media quest breakpoints
-$medium: 32em;
-$large: 60em;
-$breakpoint-no-query-fallbacks: true;
-
-// Set the container -- width is either static (calc on columns & gutters) or max-width with fluid cols & gutters
-.container { 
-    @include container(); 
+.content {
+	background:#444;
+	@include clearfix;
 }
 
-// Fallback to a static width for < ie9
-@include with-layout($fallback) {
-    .lt-ie9 .container {
-        @include container();
-    }
+.content-brand {
+	width:38%;
+	float:left;
+	height:100vh;
+	text-align: center;
 }
-
-.row,
-.blocks,
-.container {
-    @include clearfix;
-    @include break;
-}
-
-.main {
-    background:pink;
-    @include breakpoint($medium) {
-        @include span(7);
-    }
-    @include breakpoint($large) {
-       @include span(8 of 12);
-    }
-}
-.aside {
-   background:yellow;
-   @include breakpoint($medium) {
-        @include span(5 at 8 of 12);
-    }
-    @include breakpoint($large) {
-       @include span(4 at 9 of 12);
-    }
-}
-
-.product {
-    background: tint(blue, 40%);
-    @include breakpoint($medium) {
-       @include span(4);
-    }
-}
-
-.product-nested {
-    background: tint(blue, 40%);
-    @include breakpoint($medium) {
-       @include span(4 of 8);
-    }
-    &.last {
-        background:lightblue;
-    }
-}
-
-.box {
-    background: tint(red, 40%);
-    @include span(3 of 12);
-}
-
-
-.main,
-.aside,
-.box,
-.product,
-.product-nested,
-.blocks,
-.push-col {
-    min-height:100px;
-    margin-bottom: 20px;
-}
-
-.products,
-.boxes {
-    padding:0;
-    list-style:none;
-    @include clearfix; 
-}
-
-.block {
-   min-height:100px;
-}
-
-@include with-layout($nogutters) {
-   @include breakpoint($medium) {
-        .block--col3 {
-            @include span(3);
-        }
-        .block--col4 {
-            @include span(4);
-        }
-        .block--col5 {
-            @include span(5);
-        }
-        // Height
-        .block--tall2 {
-            height:200px;
-        }
-        .block--tall3 {
-            height:200px;
-        }
-        .block--tall4 {
-            height:300px;
-        }
-        .block--tall5 {
-            height:400px;
-        }
-        .block--tall6 {
-            height:500px;
-        }
-        .block--tall7 {
-            height:600px;
-        }
-    }
-}
-
-.block--tall2 {
-    background:orange;
-}
-.block--tall3 {
-    background:purple;
-}
-.block--tall4 {
-    background:yellow;
-    & + .block--tall4 {
-        background:red;
-    }
-}
-.block--tall5 {
-    background:red;
-}
-.block--tall6 {
-    background:lightgreen;
-}
-.block--tall7 {
-    background:teal;
-}
-
-.push-col {
-    background:red;
-    @include breakpoint($medium) {
-        @include span(3);
-        &:first-child {
-            @include span(4);
-            @include push(2);
-        }
-    }
-}
-
-ul {
-    &.default {
-        @extend %default-ul
-    }
-}
-ol {
-    &.default {
-        @extend %default-ol
-    }
-}
-
-// This is a fallback for < ie9 -- to remove the margin on the last column.
-// Replace with nth:child if ie8 & 7 are not supported.
-// .last can be added to the html using forloops if using a templating language. 
-.last {
-    @include breakpoint($medium) {
-        @include last;
-    }
+.brand {
+    margin: 0 auto;
+    width:70%;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 
 
-
-
-
+.content-main {
+	overflow:hidden;
+	background:#999;
+	padding:15.25em 4.625em;
+}
