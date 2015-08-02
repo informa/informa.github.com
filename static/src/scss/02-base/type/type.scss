@@ -1,25 +1,41 @@
 // Font sizes (30,24,18,14)
-
-.font-serif {
+@mixin fontserif {
   font-family: $base-font-family;
 }
-
-.font-sans {
+@mixin fontsans {
   font-family: $heading-font-family;
+}
+@mixin fontxxl {
+  font-size:1.875em;
+}
+@mixin fontxl {
+  font-size:1.5em;
+}
+@mixin fontlg {
+  font-size:1.125em;
+}
+@mixin fontmd {
+	font-size:1em;  
+}
+@mixin fontsm {
+  font-size: 0.875em;
 }
 
 .font-xxl {
-  font-size:1.875em;
+	@include fontxxl;
 }
-
 .font-xl {
-  font-size:1.5em;
+	@include fontxl;
 }
-
 .font-lg {
-  font-size:1.125em;
+	@include fontlg;
 }
-
 .font-sm {
-  font-size: 0.875em;
+	@include fontsm;
+}
+.font-serif {
+	@include fontserif;
+}
+.font-sans {
+	@include fontsans;
 }

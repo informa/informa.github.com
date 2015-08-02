@@ -1,0 +1,13 @@
+.career-milestone {
+	h2 {
+		@include fontxl;
+		@include fontserif;
+	}
+	h3 {
+		@include fontlg;
+	}
+	h4 {
+		@include fontsm;
+	}
+	margin-bottom: 2em;
+}

@@ -13,7 +13,11 @@ module.exports = function( grunt ) {
     ];
 
     var uglifyDependencies = {
-        'static/dist/js/vendor.js': ['static/src/js/vendor.js']
+        'static/dist/js/vendor.js': [
+            'static/src/js/vendor.js',
+            'bower_components/bootstrap/js/collapse.js',
+            'bower_components/bootstrap/js/transition.js'
+        ]
     };
 
     var uglifyJs = {
@@ -105,7 +109,7 @@ module.exports = function( grunt ) {
                 // Only created in the SRC directory to be uglified.
                 dest: 'static/src/js/vendor.js',
                 exclude: [
-                    'bourbon', 'breakpoint'
+                    'bourbon', 'breakpoint', 'bootstrap'
                 ],
                 dependencies: {
 

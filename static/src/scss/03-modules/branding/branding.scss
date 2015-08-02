@@ -1,0 +1,14 @@
+.branding {
+	h1 {
+		@include fontserif;
+		@include fontxxl;
+	}	
+	width: 60%;
+    text-align: center;
+    margin: 0 auto;
+
+	.nav {
+		width:50%;
+		margin:0 auto;
+	}
+}

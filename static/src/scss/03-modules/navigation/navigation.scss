@@ -3,6 +3,7 @@
 
 .nav-main {
   text-align: justify;
+  @include fontsans;
   li {
     display: inline;
     &.nav-justify {

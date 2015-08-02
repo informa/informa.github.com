@@ -6,20 +6,15 @@
 	@include clearfix;
 }
 
-.content-brand {
+.content-aside {
 	width:38%;
 	float:left;
 	height:100vh;
 	text-align: center;
-}
-.brand {
-    margin: 0 auto;
-    width:70%;
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+	.branding {
+	    margin: 0 auto;
+	    width:70%;
+	}
 }
 
 

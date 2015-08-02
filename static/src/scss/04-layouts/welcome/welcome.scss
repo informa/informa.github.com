@@ -4,18 +4,7 @@
 	height:100vh;
 }
 
-.welcome-summary {
-	width: 60%;
-    text-align: center;
-    margin: 0 auto;
-
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	.nav {
-		width:50%;
-		margin:0 auto;
-	}
+.welcome-description {
+	@include fontxl;
+	@include fontserif;
 }
