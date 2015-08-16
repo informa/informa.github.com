@@ -87,18 +87,18 @@ module.exports = function( grunt ) {
         },
 
         watch: {
-            files : [ '_layouts/*.html',
-                      '_posts/*.markdown',
-                      'static/src/scss/**/*.scss',
-                      'static/src/js/**/*.js',
-                      '_config.yml',
-                      'index.html',
-                      '404.html' ],
-            tasks : [ 'sass',
-                      'shell:jekyllServe' ],
+            files : [   'static/src/scss/**/*.scss'
+                        // '_layouts/*.html',
+                      // '_posts/*.markdown',
+                      // 'static/src/js/**/*.js',
+                      // '_config.yml',
+                      // 'index.html',
+                      // '404.html' 
+                    ],
+            tasks : [ 'sass' ],
             options : {
-                spawn : false,
-                interrupt : true,
+                // spawn : false,
+                // interrupt : true,
                 atBegin : true,
                 livereload : true
             }

@@ -1,0 +1,11 @@
+.c-branding {
+	width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.c-branding__title {
+	@include fontserif;
+	@include fontxxl;
+	margin-bottom:0;
+}	

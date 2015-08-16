@@ -1,0 +1,10 @@
+// Hero section
+
+.c-hero {
+	height:100vh;
+}
+
+.c-hero__description {
+	@include fontxl;
+	@include fontserif;
+}

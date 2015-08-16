@@ -6,7 +6,7 @@
 
 
     function initHcSticky() {
-        $('.content-aside').hcSticky();
+        $('.js-fixed-brand').hcSticky();
     }
 
     site.helpers = site.helpers || {};

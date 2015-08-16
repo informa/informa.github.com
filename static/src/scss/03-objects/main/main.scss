@@ -1,12 +1,12 @@
-// Homepage layout
+// Main layout
 
 
-.content {
+.o-main {
 	background:#444;
 	@include clearfix;
 }
 
-.content-aside {
+.o-main__brand {
 	width:38%;
 	float:left;
 	height:100vh;
@@ -17,8 +17,7 @@
 	}
 }
 
-.content-main {
+.o-main__content {
 	overflow:hidden;
 	background:#999;
-	padding:10em 4.625em;
 }
