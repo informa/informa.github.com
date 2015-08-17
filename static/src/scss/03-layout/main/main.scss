@@ -1,12 +1,12 @@
 // Main layout
 
 
-.o-main {
+.layout-main {
 	background:#444;
 	@include clearfix;
 }
 
-.o-main__brand {
+.layout-main__brand {
 	width:38%;
 	float:left;
 	height:100vh;
@@ -17,7 +17,7 @@
 	}
 }
 
-.o-main__content {
+.layout-main__content {
 	overflow:hidden;
 	background:#999;
 }

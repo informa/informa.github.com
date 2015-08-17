@@ -12,24 +12,24 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <section id="hero" class="c-hero">
-		<header class="c-branding u-vertical-align">
+    <section id="hero" class="hero">
+		<header class="branding vertical-align">
             {% include header.html %}
-            <span class="c-bar c-branding--bar c-hero--bar"></span>
-            <p class="c-hero__description">{{ site.description }}</p>
-            {% include navigation.html modifier="c-hero--nav" %}
+            <span class="bar branding--bar hero--bar"></span>
+            <p class="hero__description">{{ site.description }}</p>
+            {% include navigation.html modifier="hero--nav" %}
         </header>
 	</section>
 
-	<section class="o-main">
-		<header class="o-main__brand js-fixed-brand">
-			<div class="c-branding u-vertical-align">
+	<section class="layout-main">
+		<header class="layout-main__brand js-fixed-brand">
+			<div class="branding vertical-align">
 				{% include header.html %}
-				<span class="c-bar c-bar--full c-branding--bar"></span>
+				<span class="bar bar--full branding--bar"></span>
 	            {% include navigation.html %}
 			</div>
 		</header>
-		<div class="o-main__content">
+		<div class="layout-main__content">
 			{{ content }}
 		</div>
 	</section>

@@ -1,16 +1,16 @@
 // Navigation
 
-.c-nav {
+.nav {
   margin:3.5em auto 0;
   padding:0 1em;
 }
 
-.c-nav__list {
+.nav__list {
   text-align: justify;
   @include fontsans;
   li {
     display: inline;
-    &.c-nav--justify {
+    &.nav--justify {
       display: inline-block;
       width: 100%;
       *display: inline;
@@ -26,6 +26,6 @@
 
 // Modifiers
 
-.c-hero--nav {
+.hero--nav {
   width:50%;
 }

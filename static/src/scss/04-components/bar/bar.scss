@@ -1,10 +1,10 @@
-.c-bar {
+.bar {
 	display:inline-block;
 	height:4px;
 	background:$base-font-color;
 	width:85px;
 	margin-bottom:$small-spacing;
-	&.c-bar--full {
+	&.bar--full {
 		width:100%;
 	}
 }
@@ -14,10 +14,10 @@
 
 
 // Modifiers
-.c-hero--bar {
+.hero--bar {
 	width:50%;
 }
 
-.c-branding--bar {
+.branding--bar {
 	margin-top:2em;
 }

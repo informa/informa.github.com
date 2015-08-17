@@ -1,32 +1,38 @@
-.about {
-	padding:10em 4.625em 0;
-}
-.about-career h1,
-.career-milestone h2 {
-	@include fontxl;
-	@include fontserif;
-}
-
-.career-milestone {
-	h3 {
-		@include fontlg;
-		margin-bottom:0.4em;
-	}
-	h4 {
-		@include fontsm;
-		margin-bottom:2em;
-		font-weight: 400;
-	}
-}
-
-.about-general,
-.career-milestone,
-.about-site {
-	margin-bottom: 3em;
-}
-
 .about-general {
+	padding:10em 4.625em 3em;
 	p {
 		margin-bottom:1.1em;
 	}
+}
+.about-general__title {
+	@include fontxl;
+}
+.about-general__description {
+}
+
+
+.career-milestone {
+	padding:1.5em 4.625em;
+}
+.career-milestone__title {
+	@include fontxl;
+	@include fontserif;
+}
+.career-milestone__role {
+	@include fontlg;
+	margin-bottom:0.4em;
+}
+.career-milestone__company {
+	@include fontsm;
+	margin-bottom:2em;
+	font-weight: 400;
+}
+
+
+.about-site {
+	padding:1.5em 4.625em;
+}
+.about-site__title {
+	@include fontxl;
+	@include fontserif;
 }
