@@ -5,3 +5,11 @@
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
+
+
+
+
+.link-read-more {
+	@include fontsans;
+	font-weight: $font-weight-heavy;
+}

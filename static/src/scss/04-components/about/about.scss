@@ -1,7 +1,16 @@
+.about {
+	a {
+    	color:$action-color;
+    	border-bottom: 1px solid rgba(71,125,202,0.3);
+    	padding-bottom: 2px;
+    }
+}
+
 .about-general {
-	padding:10em 4.625em 3em;
+	padding:10em 0 3em;
+    margin: 0 15%;
 	p {
-		margin-bottom:1.1em;
+		// margin-bottom:1.1em;
 	}
 }
 .about-general__title {
@@ -12,25 +21,32 @@
 
 
 .career-milestone {
-	padding:1.5em 4.625em;
+	padding: 1.5em 0;
+    margin: 0 15%;
 }
 .career-milestone__title {
-	@include fontxl;
+	@include fontxxl;
 	@include fontserif;
+	margin-bottom:1em;
 }
 .career-milestone__role {
 	@include fontlg;
-	margin-bottom:0.4em;
+	margin-bottom:0;
 }
 .career-milestone__company {
 	@include fontsm;
 	margin-bottom:2em;
 	font-weight: 400;
+	a {
+		color: $base-font-color;
+		border-bottom-color: rgba(0,0,0,0.2);
+	}
 }
 
 
 .about-site {
-	padding:1.5em 4.625em;
+	padding: 1.5em 0;
+    margin: 0 15%;
 }
 .about-site__title {
 	@include fontxl;

@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<section id="about">
+<section id="about" class="about">
 	<article class="about-general">
 		<p class="about-general__title">Hello, I'm Jonathan, a Melbourne based frontend developer that builds flexible web applications for businesses. I enjoy the web industry and am inspired by it's community. Everyday I am excited by new technology and clever design that is interactive and engaging.</p>
-		<p class="about-general__description">Originally from Adelaide, I have been enjoying Melbourne life for more than six years, together with my lovely wife and our little boy. In that time I have developed my taste for good coffee, craft beer and a love of Chinese Malaysian food. I ride my bike when possible which makes the commute really enjoyable.</p>
+		<p class="about-general__description">Originally from Adelaide, I have been enjoying Melbourne life for more than six years, together with my lovely wife and our little boy. In that time I have developed my taste for <a href="http://www.stali.com.au/">good coffee</a>, <a href="http://craftypint.com/">craft beer</a> and a love of <a href="http://www.laksaking.com.au/">Chinese Malaysian food</a>. I ride my bike when possible which makes the commute really <a href="http://www.mapmyride.com/au/">enjoyable</a>.</p>
 	</article>
 
 	<section id="professionally">
@@ -14,11 +14,11 @@ layout: default
 			<span class="bar"></span>
 			<h1 class="career-milestone__title">Professionally since 2011</h1>
 			<h3 class="career-milestone__role">Frontend web developer</h3>
-			<h4 class="career-milestone__company">Snowballone</h4>
+			<h4 class="career-milestone__company"><a href="http://www.snowballone.com.au" target="_blank" title="Snowballone">Snowballone</a></h4>
 			<p>Working closely with the head designer and backend development team to build, maintain and grown innovative web solutions for businesses. Snowballone (formally Tangent Snowball Australia) embraces new technology enabling me to get valuable experience with css preprocessors Less and Sass, progressive enhancement with css3, increase my skills in jquery and utilize workflow tools like bower and grunt while pushing responsive app approaches.</p>
-			chocolatebox.com.au, bookworld.com.au, inverstorlinkgroup.com.au, dimeo.com.au</p>
-			<p>Snowballone uses Oscar an open-source ecommerce framework for django on many projects.I have contributed many times and helped the static setup, development and maintenance for a period using Less and Bootstrap.</p>
-			<p>For more information regarding my professional career, <a role="button" data-toggle="collapse" href="#more-milestones" aria-expanded="false" aria-controls="more-milestones">click here</a>.</p>
+			<a href="https://www.chocolatebox.com.au/">chocolatebox.com.au</a>, <a href="http://www.bookworld.com.au/">bookworld.com.au</a>, <a href="http://www.investorlinkgroup.com/">inverstorlinkgroup.com.au</a>, <a href="https://www.dimeo.com.au/">dimeo.com.au</a></p>
+			<p>Snowballone uses <a href="http://oscarcommerce.com/" target="_blank">Oscar</a> an open-source ecommerce framework for <a href="https://www.djangoproject.com/">django</a> on many projects.I have contributed many times and helped the static setup, development and maintenance for a period using <a href="http://lesscss.org/">Less</a> and <a href="http://getbootstrap.com/">Bootstrap</a>.</p>
+			<p><a role="button" data-toggle="collapse" href="#more-milestones" aria-expanded="false" aria-controls="more-milestones" class="link-read-more js-read-more">More information ...</a></p>
 		</article>
 
 		<div id="more-milestones" class="collapse">
@@ -90,18 +90,17 @@ layout: default
 </section>
 
 <section id="work">
-	<h1>Work</h1>
 	<ul class="work">
-		<li>
-			<a href="#">
-				<span class="bar"></span>
-				<h2>Project 1</h2>
+		<li class="work__item">
+			<a href="#" class="work__hook">
+				<span class="bar work--bar"></span>
+				<h2 class="work__title">Project 1</h2>
 			</a>
 		</li>
-		<li>
-			<a href="#">
-				<span class="bar"></span>
-				<h2>Project 2</h2>
+		<li class="work__item">
+			<a href="#" class="work__hook">
+				<span class="bar work--bar"></span>
+				<h2 class="work__title">Project 2</h2>
 			</a>
 		</li>
 	</ul>

@@ -16,12 +16,12 @@ h6 {
   font-family: $heading-font-family;
   font-size: $base-font-size;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  margin: 0 0 $base-spacing;
   font-weight: $font-weight-heavy;
 }
 
 p {
-  margin: 0 0 $small-spacing;
+  margin: 0 0 $base-spacing;
 }
 
 strong,b {
@@ -29,14 +29,14 @@ strong,b {
 }
 
 a {
-  color: $action-color;
+  color: $base-font-color;
   text-decoration: none;
   transition: color 0.1s linear;
 
   &:active,
   &:focus,
   &:hover {
-    color: darken($action-color, 15%);
+    color: darken($base-font-color, 15%);
   }
 
   &:active,

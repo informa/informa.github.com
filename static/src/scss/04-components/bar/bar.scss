@@ -3,7 +3,7 @@
 	height:4px;
 	background:$base-font-color;
 	width:85px;
-	margin-bottom:$small-spacing;
+	margin-bottom:$small-spacing / 2;
 	&.bar--full {
 		width:100%;
 	}
@@ -20,4 +20,8 @@
 
 .branding--bar {
 	margin-top:2em;
+}
+
+.work--bar {
+	margin-top:3em;
 }

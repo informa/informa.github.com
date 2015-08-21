@@ -1,11 +1,22 @@
 // Work list
 
 .work {
-	li {
-		display: block;
-		height: 50vh;
+
+}
+
+.work__item {
+	display: block;
+	&:nth-child(odd) {
+		background-color:lighten(#999, 10%);
 	}
-	> a {
-		padding:0 4.625em;
-	}
+}
+
+.work__hook {
+	height: 50vh;
+	padding:0 15%;
+	display:block;
+}
+
+.work__title {
+	@include fontlg;
 }

@@ -3,6 +3,10 @@
 .nav {
   margin:3.5em auto 0;
   padding:0 1em;
+  a {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom:3px;
+  }
 }
 
 .nav__list {
