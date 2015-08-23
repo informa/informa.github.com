@@ -6,13 +6,6 @@
     }
 }
 
-.about-general {
-	padding:10em 0 3em;
-    margin: 0 15%;
-	p {
-		// margin-bottom:1.1em;
-	}
-}
 .about-general__title {
 	@include fontxl;
 }
@@ -20,10 +13,6 @@
 }
 
 
-.career-milestone {
-	padding: 1.5em 0;
-    margin: 0 15%;
-}
 .career-milestone__title {
 	@include fontxxl;
 	@include fontserif;
@@ -45,10 +34,10 @@
 
 
 .about-site {
-	padding: 1.5em 0;
-    margin: 0 15%;
+
 }
 .about-site__title {
 	@include fontxl;
 	@include fontserif;
 }
+

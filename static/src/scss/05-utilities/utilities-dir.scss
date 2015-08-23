@@ -13,3 +13,7 @@
 	@include fontsans;
 	font-weight: $font-weight-heavy;
 }
+a.link-read-more {
+	color: $base-font-color;
+	border-bottom-color:rgba(0,0,0,0.2);
+}
