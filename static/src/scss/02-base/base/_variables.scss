@@ -1,13 +1,14 @@
 // Typography
-$base-font-family: 'Merriweather', serif;
-$heading-font-family: 'Lato', sans-serif;
+$base-font-family: 'Assistant', serif;
+$heading-font-family: $base-font-family;
+$alt-font-family: 'Lato', sans-serif;
 
 $font-weight-heavy: 700;
 $font-weight-regular: 400;
 
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1.125em;
 
 // Line height
 $base-line-height: 1.7;
@@ -20,10 +21,13 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+$blue: #4fadff;
+$white: #fff;
+$black: #000;
+$dark-gray: #47433b;
+$medium-gray: #95918a;
+$light-gray: #ededed;
+$yellow: #ffe656;
 
 // Font Colors
 $base-background-color: #fff;

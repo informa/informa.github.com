@@ -1,0 +1,55 @@
+body, html {
+	height:100%;
+}
+
+.welcome {
+	height: 100%;
+	border-bottom:20px solid $yellow;
+	box-sizing: border-box;
+  position: relative;
+	background: #8bdb84;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome__container {
+	max-width:650px;
+	padding: 20px;
+}
+
+.welcome__subtitle {
+	font-size: 30px;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+	font-family: Fira Sans Extra Condensed;
+}
+
+.welcome__description {
+	font-size: 20px;
+	width:80%;
+}
+
+.welcome__bar {
+	display:inline-block;
+	height:4px;
+	margin-bottom:$small-spacing / 2;
+	width:30%;
+	margin-top:2em;
+	background:$yellow;
+}
+
+.font-fira {
+	font-family: Fira Sans Extra Condensed, sans-serif;
+	font-weight: 700;
+}
+
+.svg-text__fill {
+	fill: #43bf7b;
+}
+
+.svg-text__stroke {
+	stroke: #333;
+	fill: transparent;
+}
