@@ -7,7 +7,7 @@ body, html {
 	border-bottom:20px solid $yellow;
 	box-sizing: border-box;
   position: relative;
-	background: #8bdb84;
+	background: #44D7CC;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -46,10 +46,11 @@ body, html {
 }
 
 .svg-text__fill {
-	fill: #43bf7b;
+	fill: $yellow;
 }
 
 .svg-text__stroke {
 	stroke: #333;
 	fill: transparent;
+	stroke-width: 1.5;
 }
