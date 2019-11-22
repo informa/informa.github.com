@@ -22,8 +22,9 @@
 
 .text__stroke {
   stroke: #333;
-  fill: transparent;
-  stroke-width: 1.75;
+  /* fill: transparent; */
+  fill: red;
+  stroke-width: 3.5;
 }
 
 .sub-title {
