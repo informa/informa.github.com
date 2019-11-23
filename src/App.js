@@ -14,23 +14,23 @@ function App() {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 150" class="svg">
         <defs>
           <clipPath id="text-1">
-            <text x="50.25%" dy="2" y="100" class="text title" font-size="100" font-family="Lobster" font-size="100" >Jonathan Price</text>
+            <text x="50.25%" dy="2" y="100" class="text title" font-size="100" font-family="Pacifico" font-size="100" >Jonathan Price</text>
           </clipPath>
         </defs>
 
         <text y="100" class="text title" font-size="100">
-          <tspan x="50%" class="text__fill" font-family="Lobster">
+          <tspan x="50%" class="text__fill" font-family="Pacifico">
             Jonathan Price
           </tspan>
-          <tspan x="50.25%" dy="2" class="text__stroke" font-family="Lobster">
+          <tspan x="50.25%" dy="2" class="text__stroke" font-family="Pacifico">
             Jonathan Price
           </tspan>
         </text>
         
         {/* Stroke */}
         <g clipPath="url(#text-1)">
-          <rect x="0" y="0" fill="#44D7CC" width="100%" height="100%" />
-          <text y="100" class="text title" font-size="100" font-family="Lobster">
+          <rect x="0" y="0" fill="#27f1e4" width="100%" height="100%" />
+          <text y="100" class="text title" font-size="100" font-family="Pacifico">
             <tspan x="50%" class="text__fill">
               Jonathan Price
           </tspan>
